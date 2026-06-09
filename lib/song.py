@@ -10,10 +10,10 @@ class Song:
         self.artist = artist
         self.genre = genre
         Song.count += 1
-        Song.genres +=1
+        Song.genres = []
         Song.artists +=1
-        Song.genre_count +=1
-        Song.artist_count +=1
+        Song.genre_count = []
+        Song.artist_count = []
 
     @classmethod
     def add_song_to_count(cls, count):
