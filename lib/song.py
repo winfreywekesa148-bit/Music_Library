@@ -20,7 +20,7 @@ class Song:
         return count + 1 #class method
     
     def add_to_genres(cls, genre):
-        if genre in not cls.genre:
+        if genre is not cls.genre:
             cls.genre.append(genre)
         return Song.genre_count + 1
         
