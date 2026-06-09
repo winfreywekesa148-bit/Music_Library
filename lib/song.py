@@ -1,7 +1,7 @@
 class Song:
     count = 0 #class atribute
-    genres = 0
-    artist =0
+    genres = []
+    artist = []
     genre_count = 0
     artist_count = 0
 
