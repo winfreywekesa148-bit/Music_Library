@@ -1,9 +1,9 @@
 class Song:
     count = 0 #class atribute
-    genres = 0
-    artist = 0
+    genres = []
+    artist = []
     genre_count = 0
-    artist_count = 0
+    artist_count = {}
 
     def __init__(self, name, artist, genre):
         self.name = name
@@ -16,11 +16,11 @@ class Song:
         Song.artist_count +=1
 
     @classmethod
-    def add_song_to_count(cls, count):
-        return count + 1 #class method
+    def add_song_to_count(cls, artist):
+        cls.artist_count[artist] = cls.artist_count.get(artist, 0) + 1
     
     def add_to_genres(cls, genre):
-        if genre is not cls.genre:
+        if genre in not cls.genre:
             cls.genre.append(genre)
         return Song.genre_count + 1
         
