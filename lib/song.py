@@ -26,7 +26,7 @@ class Song:
         
 
     def add_to_artists(cls, artist):
-        if artist not is cls.artist:
+        if artist not in cls.artist:
             cls.artist.append(artist)
             return Song.artist_count + 1
         
