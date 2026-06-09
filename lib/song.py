@@ -1,7 +1,7 @@
 class Song:
     count = 0 #class atribute
     genres = 0
-    artist = 0
+    artists = []
     genre_count = 0
     artist_count = 0
 
@@ -11,7 +11,7 @@ class Song:
         self.genre = genre
         Song.count += 1
         Song.genres +=1
-        Song.artist +=1
+        Song.artists +=1
         Song.genre_count +=1
         Song.artist_count +=1
 
