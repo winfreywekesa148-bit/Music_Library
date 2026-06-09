@@ -1,6 +1,6 @@
 class Song:
     count = 0 #class atribute
-    genres = 0
+    genres = []
     artist =0
     genre_count = 0
     artist_count = 0
@@ -8,7 +8,7 @@ class Song:
     def __init__(self, name, artist, genre):
         self.name = name
         self.artist = artist
-        self.genre = []
+        self.genre += 1
         Song.count += 1
         Song.genres +=1
         Song.artist +=1
