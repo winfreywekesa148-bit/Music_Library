@@ -8,7 +8,7 @@ class Song:
     def __init__(self, name, artist, genre):
         self.name = name
         self.artist = artist
-        self.genre = [artist] if isinstance(artist, str) else list(artist)
+        self.genre = genre
         Song.count += 1
         Song.genres +=1
         Song.artists +=1
